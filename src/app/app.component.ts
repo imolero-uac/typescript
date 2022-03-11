@@ -192,3 +192,4 @@ export class AppComponent {
 // console.table(facultades);
 
 // nuevo cambio
+// otro cambio
