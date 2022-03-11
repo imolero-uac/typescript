@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Facultad, EscuelaProfesional, Estudiante, mostrarEP } from './ts/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -137,10 +138,7 @@ export class AppComponent {
 // };
 
 // // console.table(alumno);
-// alumno.mostrarMatricula("Pedro");
-
-// matricular(alumno, true);
-
+// alumno.mostrarMatricula("Pedro");proyectodummy
 // // console.table(alumno);
 
 // interface Facultad {
@@ -150,10 +148,7 @@ export class AppComponent {
 
 // interface EscuelaProfesional {
 //   nombre: string,
-//   perteneceFacultad: Facultad
-// }
-
-// let facultades: Facultad[] = [];
+//   perteneceFacultad: Facultadproyectodummy
 // facultades.push({
 //   nombre: "FIA",
 //   tieneEscuelaProfesional: []
@@ -193,3 +188,24 @@ export class AppComponent {
 
 // nuevo cambio
 // otro cambio
+
+// const facu01: Facultad = {
+//   nombre: "INGENIERIA Y ARQUITECTURA"
+// }
+
+// const ep01: EscuelaProfesional = {
+//   nombre: "INGENIERIA DE SISTEMAS"
+// }
+
+// ep01.perteneceFacultad = facu01;
+// facu01.tieneEscuelaProfesional = [ep01];
+
+// mostrarEP(ep01);
+
+// const est01: Estudiante = {
+//   nombre: "Juan Perez",
+//   codigo: "0000000001a"
+// }
+
+// console.table(est01);
+
