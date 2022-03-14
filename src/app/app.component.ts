@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Facultad, EscuelaProfesional, Estudiante, mostrarEP } from './ts/interfaces';
+// import { Facultad, EscuelaProfesional, Estudiante, mostrarEP } from './ts/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -209,3 +209,57 @@ export class AppComponent {
 
 // console.table(est01);
 
+// interface Alumno {
+//   codigo: string;
+//   nombre: string;
+//   aPaterno: string;
+// }
+
+// class Estudiante {
+//   public codigo: string;
+//   private nombre: string;
+//   static codigoGenerado: number = 0;
+
+//   constructor(nombre: string) {
+//     this.nombre = nombre;
+//     this.codigo = (Estudiante.codigoGenerado + 1).toString();
+//     Estudiante.codigoGenerado++;
+//   }
+// }
+
+// const var01: Alumno = {
+//   codigo: "00000001a",
+//   nombre: "Juan Carlos",
+//   aPaterno: "Garcia"
+// }
+
+// const est01 = new Estudiante("Pedro");
+// console.table(est01);
+// console.log(Estudiante.codigoGenerado);
+// const est02 = new Estudiante("Ana");
+// console.log(Estudiante.codigoGenerado);
+// const est03 = new Estudiante("Juan");
+// console.log(Estudiante.codigoGenerado);
+
+// // console.table(var01);
+// console.table(est01);
+// console.table(est02);
+// console.table(est03);
+
+
+// class Estudiante {
+
+//   constructor(public codigo: string, 
+//     public nombre: string, 
+//     public aPaterno: string) {
+
+//   }
+// }
+
+// const est01 = new Estudiante("001", "Juan", "Garcia");
+// const est02 = new Estudiante("002", "Juana", "Perez");
+// const est03 = new Estudiante("003", "Ana", "Arminto");
+
+// console.table(est01);
+// console.table(est02);
+// console.table(est03);
