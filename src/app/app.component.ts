@@ -263,3 +263,70 @@ export class AppComponent {
 // console.table(est01);
 // console.table(est02);
 // console.table(est03);
+
+// class Persona{
+//   constructor(public nroDocumento: string, 
+//     public nombre: string,
+//     public aPaterno: string){}
+// }
+
+// class Estudiante extends Persona{
+//   constructor(public codigo: string, 
+//     public fechaIngreso: string, 
+//     nroDocumento: string, 
+//     nombre: string,
+//     aPaterno: string){
+//       super(nroDocumento, nombre, aPaterno);
+//     }
+// }
+
+// const p01 = new Persona("12457845", "Juan", "Garcia");
+
+// console.table(p01);
+
+// const est01 = new Estudiante("001", "15/01/2022", "12457845", "Juan", "Garcia")
+// est01.nombre = "Alberto";
+
+// console.table(est01);
+
+interface Almacen {
+  nombre: string,
+  detalles: DetalleAlmacen[]
+}
+
+interface DetalleAlmacen{
+  producto: string,
+  cantidad: number
+}
+
+const alm01: Almacen = {
+  nombre: "Almacen 01",
+  detalles: []
+}
+
+alm01.detalles.push({
+  producto: "Galleta de Coco",
+  cantidad: 1000
+});
+alm01.detalles.push({
+  producto: "Galleta de Chocolate",
+  cantidad: 1000
+});
+
+
+// alm01.detalles = [
+//   {
+//     producto: "Galleta de Coco",
+//     cantidad: 1000
+//   },
+//   {
+//     producto: "Galleta de Chocolate",
+//     cantidad: 1000
+//   }
+// ]
+
+let cantidadGalleta: number;
+cantidadGalleta = 0;
+cantidadGalleta = alm01.detalles[1].cantidad;
+
+console.log(cantidadGalleta);
